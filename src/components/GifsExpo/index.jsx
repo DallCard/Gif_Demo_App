@@ -35,15 +35,15 @@ const GifsExpo= ({categories = []} ) => {
     return(
         <>
         <h4> GifsExpo</h4>
-        <ol>
+        <div>
             {
              urlList.map((url) => {
                 return (
-                <li key={url}>{url}</li>
+                < img key={url} src={url}/>
                 )
              })     
             }
-               </ol>
+               </div>
                </>
     )
 }
